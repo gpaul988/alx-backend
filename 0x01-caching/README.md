@@ -1,9 +1,8 @@
-# Caching
-
+# My Readme for 0x01.caching
 This project contains tasks for learning to cache data.
-
+## Author
++ [x] Graham S. Paul
 ## Tasks To Complete
-
 + [x] 0. **Basic dictionary**<br/>[0-basic_cache.py](0-basic_cache.py) contains a Python class `BasicCache` that inherits from [`BaseCaching`](base_caching.py) and is a caching system:
   + You must use `self.cache_data` - dictionary from the parent class [`BaseCaching`](base_caching.py).
   + This caching system doesn't have limit.
@@ -13,7 +12,6 @@ This project contains tasks for learning to cache data.
   + `def get(self, key):`:
     + Must return the value in `self.cache_data` linked to `key`.
     + If `key` is `None` or if the `key` doesn't exist in `self.cache_data`, return `None`.
-
 + [x] 1. **FIFO caching**<br/>[1-fifo_cache.py](1-fifo_cache.py) contains a Python class `FIFOCache` that inherits from [`BaseCaching`](base_caching.py) and is a caching system:
   + You must use `self.cache_data` - dictionary from the parent class [`BaseCaching`](base_caching.py).
   + You can overload `def __init__(self):` but don't forget to call the parent init: `super().__init__()`.
@@ -26,7 +24,6 @@ This project contains tasks for learning to cache data.
   + `def get(self, key):`:
     + Must return the value in `self.cache_data` linked to `key`.
     + If `key` is `None` or if the `key` doesn't exist in `self.cache_data`, return `None`.
-
 + [x] 2. **LIFO Caching**<br/>[2-lifo_cache.py](2-lifo_cache.py) contains a Python class `LIFOCache` that inherits from [`BaseCaching`](base_caching.py) and is a caching system:
   + You must use `self.cache_data` - dictionary from the parent class [`BaseCaching`](base_caching.py).
   + You can overload `def __init__(self):` but don't forget to call the parent init: `super().__init__()`.
@@ -39,7 +36,6 @@ This project contains tasks for learning to cache data.
   + `def get(self, key):`:
     + Must return the value in `self.cache_data` linked to key.
     + If `key` is `None` or if the `key` doesn't exist in `self.cache_data`, return `None`.
-
 + [x] 3. **LRU Caching**<br/>[3-lru_cache.py](3-lru_cache.py) contains a Python class `LRUCache` that inherits from [`BaseCaching`](base_caching.py) and is a caching system:
   + You must use `self.cache_data` - dictionary from the parent class [`BaseCaching`](base_caching.py).
   + You can overload `def __init__(self):` but don't forget to call the parent init: `super().__init__()`.
@@ -52,7 +48,6 @@ This project contains tasks for learning to cache data.
   + `def get(self, key):`:
     + Must return the value in `self.cache_data` linked to `key`.
     + If `key` is `None` or if the `key` doesn't exist in `self.cache_data`, return `None`.
-
 + [x] 4. **MRU Caching**<br/>[4-mru_cache.py](4-mru_cache.py) contains a Python class `MRUCache` that inherits from [`BaseCaching`](base_caching.py) and is a caching system:
   + You must use `self.cache_data` - dictionary from the parent class [`BaseCaching`](base_caching.py).
   + You can overload `def __init__(self):` but don't forget to call the parent init: `super().__init__()`.
@@ -65,7 +60,6 @@ This project contains tasks for learning to cache data.
   + `def get(self, key):`:
     + Must return the value in `self.cache_data` linked to `key`.
     + If `key` is `None` or if the `key` doesn't exist in `self.cache_data`, return `None`.
-
 + [x] 5. **LFU Caching**<br/>[100-lfu_cache.py](100-lfu_cache.py) contains a Python class LFUCache that inherits from [`BaseCaching`](base_caching.py) and is a caching system:
   + You must use `self.cache_data` - dictionary from the parent class [`BaseCaching`](base_caching.py).
   + You can overload `def __init__(self):` but don't forget to call the parent init: `super().__init__()`.
