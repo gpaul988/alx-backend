@@ -1,15 +1,15 @@
 # English translations for PROJECT.
 # Copyright (C) 2024 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# Graham <gpaul988@gmail.com>, 2024.
+# Graham S. Paul <gpaul988@gmail.com>, 2024.
 #
 msgid "Welcome to Holberton"
 msgstr "Hello world!"
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: gpaul988@gmail.com\n"
-"POT-Creation-Date: 2024-02-06 12:14-0800\n"
-"PO-Revision-Date: 2024-02-06 12:14-0800\n"
-"Last-Translator: Graham Sobiribo Paul <gpaul988@gmail.com>\n"
+"POT-Creation-Date: 2024-02-06 12:50-0800\n"
+"PO-Revision-Date: 2024-02-06 12:50-0800\n"
+"Last-Translator: Graham S. Paul <gpaul988@gmail.com>\n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
