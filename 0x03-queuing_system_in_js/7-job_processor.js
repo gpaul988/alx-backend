@@ -1,15 +1,17 @@
 #!/usr/bin/yarn dev
 import { createQueue, Job } from 'kue';
 
-const BLACKLISTED_NUMBERS = ['4153518780', '4153518781'];
 const queue = createQueue();
+const BLACKLISTED_NUMBERS = ['4153518780', '4153518781'];
 
 /**
- * Sends a push notification to a user.
- * @param {String} phoneNumber
- * @param {String} message
+ * Send notification
+ * @param {string} phoneNumber
+ * @param {string} message
  * @param {Job} job
- * @param {*} done
+ * @param {Function} done
+ * @return {void}
+ * @author Graham S. Paul
  */
 const sendNotification = (phoneNumber, message, job, done) => {
   let total = 2, pending = 2;

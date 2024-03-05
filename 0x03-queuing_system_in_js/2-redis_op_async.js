@@ -1,4 +1,18 @@
 #!/usr/bin/yarn dev
+/**
+ * Redis Client
+ * @file Redis Client
+ * @typedef {import('redis').RedisClient} RedisClient
+ * @typedef {import('redis').ClientOpts} ClientOpts
+ * @typedef {import('redis').Callback} Callback
+ * @typedef {import('redis').PrintCallback} PrintCallback
+ * @typedef {import('redis').RedisError} RedisError
+ * @typedef {import('util').Promisify} Promisify
+ * @typedef {import('util').Callbackify} Callbackify
+ * @typedef {import('util').CustomPromisifySymbol} CustomPromisifySymbol
+ * @typedef {import('util').InspectOptions} InspectOptions
+ * @author Graham S. Paul
+ */
 import { promisify } from 'util';
 import { createClient, print } from 'redis';
 

@@ -1,6 +1,13 @@
 #!/usr/bin/yarn dev
 import { createClient } from 'redis';
 
+/**
+ * Publish a message
+ * @param {string} message
+ * @param {number} time
+ * @return {void}
+ * @author Graham S. Paul
+ */
 const client = createClient();
 
 client.on('error', (err) => {

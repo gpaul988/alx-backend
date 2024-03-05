@@ -1,4 +1,10 @@
 #!/usr/bin/yarn dev
+/**
+ * Job processor
+ * @file Job processor
+ * @return {void}
+ * @author Graham S. Paul
+ */
 import { createQueue } from 'kue';
 
 const queue = createQueue();

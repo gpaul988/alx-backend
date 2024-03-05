@@ -1,6 +1,12 @@
 #!/usr/bin/yarn dev
 import { createQueue } from 'kue';
 
+/**
+ * Job creator
+ * @file Job creator
+ * @return {void}
+ * @author Graham S. Paul
+ */
 const jobs = [
   {
     phoneNumber: '4153518780',

@@ -1,4 +1,10 @@
 #!/usr/bin/yarn dev
+/**
+ * Job creator
+ * @file Job creator
+ * @return {void}
+ * @author Graham S. Paul
+ */
 import { createQueue } from 'kue';
 
 const queue = createQueue({name: 'push_notification_code'});

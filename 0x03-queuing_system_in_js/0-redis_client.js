@@ -1,4 +1,9 @@
 #!/usr/bin/yarn dev
+/**
+ * Redis client
+ * @file Redis client
+ * @author Graham S. Paul
+ */
 import { createClient } from 'redis';
 
 const client = createClient();

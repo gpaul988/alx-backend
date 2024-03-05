@@ -1,9 +1,13 @@
 #!/usr/bin/yarn test
-import sinon from 'sinon';
 import { expect } from 'chai';
-import { createQueue } from 'kue';
+import sinon from 'sinon';
 import createPushNotificationsJobs from './8-job.js';
+import { createQueue } from 'kue';
 
+/**
+ * Writing Test for Job Creation
+ * @author Graham S. Paul
+ */
 describe('createPushNotificationsJobs', () => {
   const BIG_BROTHER = sinon.spy(console);
   const QUEUE = createQueue({ name: 'push_notification_code_test' });

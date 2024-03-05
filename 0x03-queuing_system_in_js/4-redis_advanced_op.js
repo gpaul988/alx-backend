@@ -1,6 +1,14 @@
 #!/usr/bin/yarn dev
 import { createClient, print } from 'redis';
 
+/**
+ * Update the hash
+ * @param {string} hashName
+ * @param {string} fieldName
+ * @param {string} fieldValue
+ * @return {void}
+ * @author Graham S. Paul
+ */
 const client = createClient();
 
 client.on('error', (err) => {

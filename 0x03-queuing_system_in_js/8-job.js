@@ -2,9 +2,10 @@
 import { Queue, Job } from 'kue';
 
 /**
- * Creates push notification jobs from the array of jobs info.
+ * Develope  push notification jobs from the array of jobs info.
  * @param {Job[]} jobs
  * @param {Queue} queue
+ * @author Graham S. Paul
  */
 export const createPushNotificationsJobs = (jobs, queue) => {
   if (!(jobs instanceof Array)) {

@@ -1,4 +1,14 @@
 #!/usr/bin/yarn dev
+/**
+ *  Redis Client
+ * @file Redis Client
+ * @typedef {import('redis').RedisClient} RedisClient
+ * @typedef {import('redis').ClientOpts} ClientOpts
+ * @typedef {import('redis').Callback} Callback
+ * @typedef {import('redis').PrintCallback} PrintCallback
+ * @typedef {import('redis').RedisError} RedisError  
+ * @author Graham S. Paul
+ */
 import { createClient, print } from 'redis';
 
 const client = createClient();

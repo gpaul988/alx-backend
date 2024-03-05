@@ -1,26 +1,27 @@
 #!/usr/bin/yarn dev
-import express from 'express';
-import { promisify } from 'util';
 import { createQueue } from 'kue';
 import { createClient } from 'redis';
+import express from 'express';
+import { promisify } from 'util';
 
-const app = express();
 const client = createClient({ name: 'reserve_seat' });
 const queue = createQueue();
+const app = express();
 const INITIAL_SEATS_COUNT = 50;
 let reservationEnabled = false;
 const PORT = 1245;
 
 /**
- * Modifies the number of available seats.
- * @param {number} number - The new number of seats.
+ * Mordenizes the number of available seats.
+ * @param {number} number - New number of seats.
+ * @author Graham S. Paul
  */
 const reserveSeat = async (number) => {
   return promisify(client.SET).bind(client)('available_seats', number);
 };
 
 /**
- * Retrieves the number of available seats.
+ * Gets Back  number of available seats.
  * @returns {Promise<String>}
  */
 const getCurrentAvailableSeats = async () => {
